@@ -592,7 +592,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
       const btn = document.getElementById('downloadCv');
-      const pdfPath = 'images/Nikhitha-K-Resume.pdf';
+      const pdfPath = 'images/resume_nikhitha_konda.pdf';
 
       fetch(pdfPath)
         .then(function (res) {
@@ -602,7 +602,7 @@
         .then(function (blob) {
           const url = URL.createObjectURL(blob);
           btn.href = url;
-          btn.setAttribute('download', 'Nikhitha-K-Resume.pdf');
+          btn.setAttribute('download', 'resume_nikhitha_konda.pdf');
           btn.addEventListener('click', function () {
             setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
           }, { once: true });
@@ -652,4 +652,5 @@
 
 </body>
 </html>
+
 
